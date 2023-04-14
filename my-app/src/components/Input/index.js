@@ -7,7 +7,7 @@ export default function Input(props) {
 
         <div>
 
-            <input onChange={props.inputFunction}></input>
+            <input onChange={props.inputFunction} value={props.userInput}></input>
             <button onClick={props.buttonClick}>Add</button>
 
         </div>

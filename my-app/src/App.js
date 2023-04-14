@@ -16,9 +16,9 @@ function App() {
   const [updatedUserInput, setupdatedUserInput] = useState(userInput);
 
   const handleButtonClick = (event) => {
-
-    setupdatedUserInput(userInput);
-  }
+    setlistOfTodos((prevList) => [...prevList, userInput]); // Add the new item to the previous list of items
+    setupdatedUserInput(''); // Clear the input field
+  };
 
   /* Get the text to be added to a list item when button is clicked -
   
@@ -40,7 +40,7 @@ function App() {
   return (
     <div className="App">
       <Input buttonClick={handleButtonClick} inputFunction={handleInputChange} ></Input>
-      <List input={userInput} button={handleButtonClick}></List>
+      <List todoList={listOfTodos} input={userInput}></List>
     </div>
   );
 }
