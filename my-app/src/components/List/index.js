@@ -5,8 +5,8 @@ export default function List(prop) {
     return  (
     <div>
         <h1>To Do's List:</h1>
-         {prop.todoList.map((item) => (
-        <div>
+         {prop.todoList.map((item, index) => (
+        <div index={index}>
         <ul>
           <li>{item}</li>
         </ul>
