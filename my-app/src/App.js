@@ -17,30 +17,23 @@ function App() {
 
   const handleButtonClick = (event) => {
     setlistOfTodos((prevList) => [...prevList, userInput]); // Add the new item to the previous list of items
-    setupdatedUserInput(''); // Clear the input field
+    setupdatedUserInput(''); 
   };
 
-  /* Get the text to be added to a list item when button is clicked -
+  function removeElement(index) {
+    setlistOfTodos((prevList) => {
+      const newList = [...prevList];
+      newList.splice(index, 1);
+      return newList; 
+    });
+  };
   
-  create a function in the app.js (Parent) that takes in an onClick event so when the button is 
-  clicked, the text is added to a list item.
-
-  write function skeleton 
-
-  create buttons state
-
-  pass the function down to the Input
-
-
-
-  
-  */
 
   
   return (
     <div className="App">
       <Input buttonClick={handleButtonClick} inputFunction={handleInputChange} ></Input>
-      <List todoList={listOfTodos} input={userInput}></List>
+      <List todoList={listOfTodos} input={userInput} removeFunction={removeElement}></List>
     </div>
   );
 }

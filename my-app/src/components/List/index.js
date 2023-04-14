@@ -10,7 +10,7 @@ export default function List(prop) {
         <ul>
           <li>{item}</li>
         </ul>
-        <button>Delete</button>
+        <button onClick={() => prop.removeFunction(index)}>Delete</button>
         </div>
         ))}
     </div>
