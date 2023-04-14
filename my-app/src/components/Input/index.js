@@ -1,15 +1,14 @@
-import React from 'react';
+import {React, useState} from 'react';
 
 export default function Input(props) {
-
 
 
     return(
 
         <div>
 
-            <input></input>
-            <button>Add</button>
+            <input onChange={props.inputFunction}></input>
+            <button onClick={props.buttonClick}>Add</button>
 
         </div>
 
