@@ -1,0 +1,53 @@
+.App {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	font-family: "Montserrat", sans-serif;
+	padding: 200px;
+}
+
+button {
+	background-color: #0e7c9b;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 16px;
+}
+button:hover {
+	background-color: #45a049;
+}
+
+input {
+	background-color: #caebf4;
+	width: 300px;
+	padding: 10px;
+	border: inset;
+	border-radius: 4px;
+}
+
+h1 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 48px;
+	font-weight: lighter;
+	line-height: 1.2;
+	color: #333;
+	text-align: center;
+	letter-spacing: 5px;
+	margin: 40px 0;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	margin: 10px 5px;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
