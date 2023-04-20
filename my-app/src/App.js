@@ -3,6 +3,8 @@ import {React, useState} from 'react';
 import List from './components/List';
 import Input from './components/Input';
 
+//added a note to push as the pull didnt work on the day and we could only have one navigator for the task
+
 function App() {
   
   const [listOfTodos, setlistOfTodos] = useState([]); 
